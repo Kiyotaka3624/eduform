@@ -215,3 +215,19 @@ cd src/main/edu_platform_frontend
 npm i
 npm run dev
 ```
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 11 15" src="https://github.com/user-attachments/assets/fd392e55-6eb8-4d79-955a-612f633a5918" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 13 19" src="https://github.com/user-attachments/assets/4e2f48b7-814c-4c00-93c2-4d82ff5874ed" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 13 24" src="https://github.com/user-attachments/assets/2107f178-e173-4b05-af9e-95f61cbf5437" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 16 15" src="https://github.com/user-attachments/assets/8a86c5f8-86ac-423c-a0cb-a9a2269f0f07" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 16 18" src="https://github.com/user-attachments/assets/93a6209f-c17e-442e-9ede-1f66c82892b8" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 17 01" src="https://github.com/user-attachments/assets/1a0c8fc3-2028-41a5-886b-06fac528a71e" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 17 05" src="https://github.com/user-attachments/assets/7b1ac9e6-f985-4581-8cfe-bcd22aa3699a" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 18 43" src="https://github.com/user-attachments/assets/fa6788a6-7234-446e-b77f-56462408d3f9" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 18 46" src="https://github.com/user-attachments/assets/18327080-6076-44d5-a45e-c835ec7fd003" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 18 52" src="https://github.com/user-attachments/assets/a875d871-5d2f-42a8-9771-bd20e0e851e1" />
+<img width="2056" alt="스크린샷 2025-06-15 오후 4 19 00" src="https://github.com/user-attachments/assets/724c10c3-8a95-4185-8e1b-370f4c70b6e5" />
+
+
+
+
+
