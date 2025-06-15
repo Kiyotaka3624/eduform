@@ -1,0 +1,55 @@
+.ra-wrapper {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 100px;
+}
+
+.ra-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ra-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ra-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ra-group input,
+.ra-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.ra-submit {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ra-submit:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+}

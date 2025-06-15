@@ -1,0 +1,39 @@
+.notice-detail {
+  max-width: 700px;
+  margin: auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-top: 100px;
+}
+.nd-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+.nd-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+.nd-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+}
+.nd-back {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 500;
+}
+.nd-back:hover {
+  text-decoration: underline;
+}
+.nd-loading {
+  text-align: center;
+  margin: 2rem;
+  color: #888;
+}

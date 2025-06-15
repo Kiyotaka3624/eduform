@@ -1,0 +1,61 @@
+.lecture-add-wrapper {
+  margin-top: 100px; /* 헤더(72px) + 여유 */
+  padding: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.la-heading {
+  font-size: 1.75rem;
+  color: #4f46e5;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.la-form .la-group {
+  margin-bottom: 1.25rem;
+}
+
+.la-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.la-form input,
+.la-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+.la-form input:focus,
+.la-form textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.la-submit {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg,#6366f1,#4f46e5);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.la-submit:hover {
+  transform: translateY(-2px);
+}

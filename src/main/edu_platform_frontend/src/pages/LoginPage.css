@@ -1,0 +1,167 @@
+/* 헤더 높이 변수 */
+:root {
+  --header-height: 72px;
+}
+
+/* 래퍼: 헤더 아래, 전체 화면 채움 */
+.login-wrapper {
+  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* 카드 스타일 */
+.login-card {
+  width: 100%;
+  max-width: 1024px;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  margin: 5%;
+}
+.login-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 제목 */
+.login-heading {
+  margin: 0 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 입력 그룹 */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.input-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-group input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+  outline: none;
+}
+
+/* 로그인 버튼 */
+.btn-login {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-login:hover {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  transform: translateY(-2px);
+}
+
+/* 회원가입 링크 */
+.signup-prompt {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+.signup-prompt a {
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+}
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+.custom-toast {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+  padding: 0.75rem 1.25rem !important;
+  max-width: 90vw !important;
+  width: auto;
+}
+
+/* 텍스트 영역: flex-grow 없이 콘텐츠만 */
+.custom-toast-body {
+  flex: none !important;
+  margin: 0 1rem !important;   /* 아이콘·버튼과 간격 */
+  padding: 0 !important;
+  color: #1f2937 !important;
+  font-size: 0.95rem !important;
+  white-space: nowrap;         /* 줄바꿈 방지 */
+}
+
+/* 아이콘 */
+.custom-toast svg {
+  flex: none !important;
+  color: #ef4444;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* 닫기 버튼 */
+.Toastify__close-button {
+  flex: none !important;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+/* 모바일 전용 보정 */
+@media (max-width: 480px) {
+  .login-heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    background: transparent;
+  }
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  .input-group input {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+  }
+  .btn-login {
+    margin-top: 0;
+  }
+  .signup-prompt {
+    margin-top: 1rem;
+  }
+  /* 모바일 토스트 너비 조정 */
+  .custom-toast {
+    min-width: 200px !important;
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+  }
+}

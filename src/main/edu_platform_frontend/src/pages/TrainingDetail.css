@@ -1,0 +1,100 @@
+.td-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+}
+
+.td-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.td-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.td-image-wrap {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.td-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.td-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.td-content {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.td-meta {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.td-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.td-apply-btn {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.td-apply-btn:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+}
+
+.td-back {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.td-back:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.td-loading,
+.td-not-found {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 2rem;
+  color: #9ca3af;
+}

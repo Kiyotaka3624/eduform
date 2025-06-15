@@ -1,0 +1,144 @@
+:root {
+  --header-height: 72px;
+}
+
+/* 전체 래퍼 */
+.signup-wrapper {
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* 카드 */
+.signup-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  margin: 5%;
+}
+.signup-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 타이틀 */
+.signup-heading {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+/* 입력 그룹 */
+.input-group {
+  margin-bottom: 1.25rem;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+  outline: none;
+}
+
+/* 회원가입 버튼 */
+.btn-signup {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-signup:hover {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  transform: translateY(-2px);
+}
+
+/* 로그인 링크 */
+.login-link {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+.login-link a {
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* 토스트 커스텀 */
+.custom-toast {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+  padding: 0.75rem 1.25rem !important;
+  max-width: 90vw !important;
+}
+.custom-toast-body {
+  flex: none !important;
+  margin: 0 1rem !important;
+  padding: 0 !important;
+  color: #1f2937 !important;
+  font-size: 0.95rem !important;
+  white-space: nowrap;
+}
+.Toastify__close-button {
+  flex: none !important;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+/* 모바일 전용 */
+@media (max-width: 480px) {
+  .signup-wrapper {
+    padding: 2rem 1rem;
+    background: #f5f7fa;
+  }
+  .signup-card {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+}

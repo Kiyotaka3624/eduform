@@ -1,0 +1,123 @@
+/* LectureDetail.css */
+
+:root {
+  --header-height: 72px;
+  --max-width: 800px;
+  --padding: 2rem;
+  --card-bg: #ffffff;
+  --accent-color: #6366f1;
+  --text-color: #333;
+  --subtext-color: #555;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius: 1rem;
+  --gap: 1.5rem;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.lecture-detail-wrapper {
+  margin-top: calc(var(--header-height) + var(--gap));
+  padding: var(--padding);
+  display: flex;
+  justify-content: center;
+}
+
+.lecture-detail-card {
+  width: 100%;
+  max-width: var(--max-width);
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.ld-header {
+  background: linear-gradient(90deg, #eef2ff, #e0e7ff);
+  padding: var(--gap);
+  border-bottom: 1px solid #ddd;
+}
+
+.ld-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.ld-subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--subtext-color);
+}
+
+.ld-body {
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.ld-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.ld-description {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.ld-video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect */
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ld-video-container iframe,
+.ld-video-container video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.ld-footer {
+  padding: var(--gap);
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ld-back {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.ld-back:hover {
+  color: #4f46e5;
+}
+
+@media (max-width: 600px) {
+  .ld-title {
+    font-size: 1.75rem;
+  }
+  .ld-subtitle {
+    font-size: 1.1rem;
+  }
+  .ld-body {
+    gap: 1rem;
+  }
+}

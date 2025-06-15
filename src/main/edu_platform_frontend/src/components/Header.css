@@ -1,0 +1,201 @@
+:root {
+  --header-height: 72px;
+}
+
+/* Header 전체 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* 로고와 네비(wrapper) */
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+/* 로고 - 그라데이션 텍스트 적용 */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-edu,
+.logo-form {
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo-form {
+  margin-left: 0.25rem;
+}
+
+/* 데스크탑 네비 */
+.nav-desktop .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #4f46e5;
+}
+
+/* 인증 버튼 데스크탑 */
+.auth-desktop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #4f46e5;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* 사용자 메뉴 */
+.user-menu {
+  position: relative;
+}
+.username-btn {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333333;
+  padding: 0.5rem;
+}
+.username-btn:hover {
+  color: #4f46e5;
+}
+.dropdown {
+  position: absolute;
+  top: calc(var(--header-height) + 0.5rem);
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 160px;
+  z-index: 1001;
+}
+.dropdown li {
+  padding: 0;
+}
+.dropdown a,
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.dropdown a:hover,
+.dropdown button:hover {
+  background-color: #f5f5f5;
+}
+
+/* 햄버거 버튼 */
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #333333;
+}
+
+/* 모바일 메뉴 */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.mobile-menu.open {
+  display: block;
+}
+.mobile-nav-items {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+.mobile-nav-item {
+  margin-bottom: 0.75rem;
+}
+.mobile-link,
+.button-as-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.mobile-link:hover,
+.button-as-link:hover {
+  background-color: #f5f5f5;
+}
+
+/* 반응형 */
+@media (max-width: 1000px) {
+  .nav-desktop,
+  .auth-desktop {
+    display: none;
+  }
+  .toggle {
+    display: inline-flex;
+  }
+}
